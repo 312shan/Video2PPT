@@ -12,3 +12,23 @@ get the ppt content as video-capture from video tutorial by python
 
 # Result:
 利用这份小代码就可以将视频中的ppt等讲义信息，按顺序，无重复的获取到了，可以以图片形式输出，也可以输出位 pdf 或者 markdown 等文件
+
+# Usage:
+```
+(venv) shan@cys:/media/shan/Elements/video2capture$ python v2i.py --videos_path='mda-id2urnnkytge9q34.mp4'
+usage: v2i.py [-h] --videos_path VIDEOS_PATH [--sim_benchmark SIM_BENCHMARK]
+              [--images_output_path IMAGES_OUTPUT_PATH]
+              [--frame_per_step FRAME_PER_STEP]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --videos_path VIDEOS_PATH
+                        path to video
+  --sim_benchmark SIM_BENCHMARK
+                        image similarity benchmark
+  --images_output_path IMAGES_OUTPUT_PATH
+                        path to images output folder
+  --frame_per_step FRAME_PER_STEP
+                        how many frame per step
+
+```
