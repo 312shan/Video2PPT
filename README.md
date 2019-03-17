@@ -1,5 +1,5 @@
 # Video2PPT
-get the ppt content from video tutorial by python
+get the ppt content as video-capture from video tutorial by python
 
 # Why:
 看一些视频教程的时候经常遇到需要对视频中的讲义或者 ppt 进行截图的情况，一张一张截图实在是重复劳动！！！shame!!!
