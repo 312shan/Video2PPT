@@ -1,6 +1,6 @@
 # _*_ coding: utf-8 _*_
 import cv2
-from skimage.measure import compare_ssim as ssim
+from skimage.metrics import structural_similarity as simi
 import numpy as np
 import argparse
 import os
@@ -32,7 +32,7 @@ for i in range(int(frames)):
         pre = np.zeros_like(frame)
     if frame is None:
         continue
-    if i % args.frame_per_step == 0 and ssim(pre, frame, multichannel=True) < args.sim_benchmark:
+    if i % args.frame_per_step == 0 and simi(pre, frame, multichannel=True) < args.sim_benchmark:
         cv2.imwrite(os.path.join(args.images_output_path, '{}.png'.format(i)), frame)
         pre = frame
 
